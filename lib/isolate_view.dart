@@ -75,6 +75,7 @@ class _IsolateViewState extends State<IsolateView> {
                               isIsolateTaskDone = true;
                               _isolate?.kill();
                               _isolate = null;
+                              receivePort.close();
                             });
                           }
                         }
