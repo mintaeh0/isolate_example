@@ -37,7 +37,7 @@ class _IsolateViewState extends State<IsolateView> {
                   FilledButton(
                     onPressed: () async {
                       setState(() => isAsyncTaskDone = false);
-                      await machineGun();
+                      await bigTask();
                       setState(() => isAsyncTaskDone = true);
                     },
                     child: Text("실행"),
@@ -60,7 +60,7 @@ class _IsolateViewState extends State<IsolateView> {
                       setState(() => isIsolateTaskDone = false);
 
                       _isolate = await Isolate.spawn(
-                        isolatedMachineGun,
+                        isolatedBigTask,
                         receivePort.sendPort,
                       );
 
@@ -92,7 +92,7 @@ class _IsolateViewState extends State<IsolateView> {
   }
 }
 
-Future<void> machineGun() async {
+Future<void> bigTask() async {
   int index = 0;
   int index2 = 0;
   int index3 = 0;
@@ -110,7 +110,7 @@ Future<void> machineGun() async {
   }
 }
 
-Future<void> isolatedMachineGun(SendPort sendPort) async {
+Future<void> isolatedBigTask(SendPort sendPort) async {
   int index = 0;
   int index2 = 0;
   int index3 = 0;
