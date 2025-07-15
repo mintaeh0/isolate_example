@@ -110,3 +110,5 @@ FilledButton(
 비동기 작업![image](https://github.com/user-attachments/assets/5d95600e-ffaf-4898-ae57-35d2e75195ed)|Isolate 작업![image (1)](https://github.com/user-attachments/assets/e62c71b2-bf97-43c6-873c-50a4b9a48afd)|
 ---|---|
 
+Flutter Docs : https://docs.flutter.dev/perf/isolates
+Velog : https://velog.io/@mth1150/Flutter-Isolate%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%ED%81%B0-%EC%9E%91%EC%97%85-%EB%B6%84%EB%A6%AC%ED%95%98%EA%B8%B0
